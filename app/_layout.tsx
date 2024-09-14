@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View } from "react-native";
 import React from "react";
-import { Slot } from "expo-router";
+import { Stack } from "expo-router";
 import { useFonts } from "expo-font";
 import { SplashScreen } from "expo-router";
 import { useEffect } from "react";
@@ -33,9 +33,24 @@ const RootLayout = () => {
   }
 
   return (
-    <>
-      <Slot />
-    </>
+    <Stack>
+      <Stack.Screen
+        name="index"
+        options={{ headerShown: false }}
+      ></Stack.Screen>
+      <Stack.Screen
+        name="(auth)"
+        options={{ headerShown: false }}
+      ></Stack.Screen>
+      <Stack.Screen
+        name="(tabs)"
+        options={{ headerShown: false }}
+      ></Stack.Screen>
+      <Stack.Screen
+        name="/search/query"
+        options={{ headerShown: false }}
+      ></Stack.Screen>
+    </Stack>
   );
 };
 
