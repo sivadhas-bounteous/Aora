@@ -50,7 +50,7 @@ const SignIn = () => {
             className="w-[115px] h-[35px]"
           />
           <Text className="text-white text-2xl mt-10 font-psemibold">
-            Log in to Aora
+            Sign in
           </Text>
           <FormField
             value={form.email}

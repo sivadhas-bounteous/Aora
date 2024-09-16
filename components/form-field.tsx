@@ -30,7 +30,7 @@ const FormField: FC<FormFieldProps> = ({
           className="flex-1 text-white font-psemibold text-base"
           placeholder={placeholder}
           value={value}
-          placeholderTextColor={"#"}
+          placeholderTextColor={"#7b7b8b"}
           onChangeText={handleChangeText}
           secureTextEntry={title === 'Password' && !showPassword}
         />
